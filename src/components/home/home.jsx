@@ -1,6 +1,6 @@
 const Home = () => {
     return <>
-        
+        home works 
     </>
 }
 

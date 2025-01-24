@@ -1,0 +1,68 @@
+.navbar-container{
+    display: flex;
+    justify-content: center;
+    color: rgb(127, 129, 136);
+    margin-top: 15px;
+  }
+  .navbar{
+    display: flex;
+    align-items: center;
+    background-color: rgb(16,16,16);
+    width: 70%;
+    border-radius: 100px;
+    text-align: center;
+  }
+  .navbar .branding {
+    width: 20%;
+    font-size: 30px;
+    font-weight: 600;
+    background: linear-gradient(0deg, rgb(89, 89, 89) 0%, rgb(255, 255, 255) 100%);
+    -webkit-background-clip: text;
+    color: transparent;
+  }
+  .nav-items {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+  }
+  .nav-items ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+    margin: 10px;
+    border: 1px solid rgb(48, 50, 54);
+    border-radius: 100px;
+  }
+  .nav-items ul li {
+    padding:  0 30px;
+    font-size: 16px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+  }
+  .nav-items ul li a {
+    text-decoration: none;
+    color: inherit;
+  }
+  .nav-items ul li:last-child {
+    border: 5px solid rgb(48, 50, 54);
+    padding: 0;
+    width: 20px;
+    border-radius: 50%;
+    height: 20px;
+    margin-right: 10px;
+  }
+  .nav-items ul li:first-child {
+    color: rgb(48, 50, 54);
+    margin-left: 10px;
+    border-radius: 50%;
+    padding: 10px;
+    background: linear-gradient(0deg, rgb(89, 89, 89) 0%, rgb(255, 255, 255) 100%);
+  }
+  .nav-items ul li:hover {
+    cursor: pointer;
+    color: #fdfdfd;
+  }
+  .clock {
+    width: 20%;
+  }
