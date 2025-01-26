@@ -1,10 +1,27 @@
+:root {
+  --body-bg:#101010;
+  --text-color: rgb(127,129,136);
+  --card-bg:rgb(30, 29, 28);
+  --card-bg-2: rgb(30, 31, 35);
+  --card-box-shadow: rgb(36, 36, 36) 0px 0px 0px 0px;
+  --card-box-shadow-hover: rgb(36, 36, 36) 0px 0px 40px 0px;
+  --card-text-color:rgb(242, 242, 242);
+  --card-border-color:rgb(39,39,39);
+  --bg-linear-gradient: linear-gradient(0deg, rgb(89, 89, 89) 0%, rgb(255, 255, 255) 100%);
+  --navbar-bg:rgb(16,16,16);
+  --navbar-border-color:rgb(48, 50, 54);
+  --navbar-menu-hover-color:#fdfdfd;
+  --section-heading-color:rgb(151, 151, 151);
+  --timeline-card-box-shadow-hover: rgb(36, 36, 36) 0px 0px 20px 0px;
+}
+
 body {
   margin: 0;
   font-family: "Inter Display", "Inter Display Placeholder", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #101010;
-  color: rgb(127, 129, 136);
+  background-color: var(--body-bg);
+  color: var(--text-color);
 }
 
 ::-webkit-scrollbar {
@@ -29,6 +46,10 @@ body {
   display: flex;
   justify-content: center;
 }
+.container .content {
+  width: 70%;
+  margin-top: 8rem;
+}
 .heading{
   font-size: 36px;
   text-align: center;
@@ -41,7 +62,7 @@ body {
 }
 
 .gradient {
-  background: linear-gradient(0deg, rgb(89, 89, 89) 0%, rgb(255, 255, 255) 100%);
+  background: var(--bg-linear-gradient);
   -webkit-background-clip: text;
   color: transparent;
 }

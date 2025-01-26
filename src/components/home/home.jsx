@@ -9,7 +9,7 @@ const cardsData = [
 const Home = () => {
     return <>
         <div className="container">
-            <div className="home-container">
+            <div className="content">
                 <div className="introduction">
                     <div className="heading gradient">Code Parth</div>
                     <div className="sub-heading">Full Stack Developer</div>

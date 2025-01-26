@@ -20,6 +20,9 @@
 }
 .card-body .card-image img {
     width: 450px;
+    margin-left: -2px;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
 }
 .card-description {
     padding: 10px 30px 10px 40px;
@@ -28,25 +31,24 @@
 .card-description p {
     font-size: 35px;
     font-weight: 500;
-    color: rgb(242, 242, 242);
+    color: var(--card-text-color);
     margin: 15px 0;
 }
 .card-description .description {
     font-size: 18px;
 }
 .card-container {
-    border: 1px solid rgb(39,39,39);
+    border: 1px solid var(--card-border-color);
     border-radius: 10px;
-    /* background-color: rgb(30, 31, 35); */
-    background-color: rgb(30, 29, 28);
-    box-shadow: rgb(36, 36, 36) 0px 0px 0px 0px;
-    transform: perspective(1200px);
+    /* background-color: var(--card-bg-2); */
+    background-color: var(--card-bg);
+    box-shadow: var(--card-box-shadow);
     transition: all ease-in-out 0.3s;
     margin-bottom: 6rem;
 }
 .card-container:hover {
-    box-shadow: rgb(36, 36, 36) 0px 0px 40px 0px;
-    transform: perspective(1200px) scale(1.05);
+    box-shadow: var(--card-box-shadow-hover);
+    transform: scale(1.03);
     cursor: pointer;
 }
 .card-heading .logo img{

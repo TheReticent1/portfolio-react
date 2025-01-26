@@ -1,14 +1,10 @@
-.home-container {
-    width: 70%;
-    margin-top: 8rem;
-}
 .work {
     padding: 20px;
     margin: 48px 0;
 }
 .work .work-heading {
     font-size: 25px;
-    color: rgb(151, 151, 151);
+    color: var(--section-heading-color);
     text-transform: uppercase;
     text-align: center;
     margin-bottom: 48px;
@@ -27,13 +23,14 @@
     align-items: center; 
     overflow: hidden;
     animation: slideBackground 30s infinite alternate;
+    box-shadow: var(--card-box-shadow-hover);
 } 
 .intro-img-text {
     color: white;
     font-size: 1.5rem;
     text-align: center;
     background-color: rgba(0, 0, 0, 0.5);
-    box-shadow: rgb(36, 36, 36) 0px 0px 40px 0px;
+    box-shadow: var(--card-box-shadow-hover);
     padding: 10px;
     border-radius: 10px;
     margin: 20px;
