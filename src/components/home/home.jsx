@@ -2,9 +2,9 @@ import Cards from "../../shared/components/cards/cards";
 import "./home.css";
 
 const cardsData = [
-    {heading: "01 | Heading1", logo:"logo", cardImage:"/imgs/intro.jpg", descriptionHeading:"Card Heading 1", description:"Card description 1"},
-    {heading: "02 | Heading2", logo:"logo", cardImage:"/imgs/studio.jpg", descriptionHeading:"Card Heading 2", description:"Card description 2"},
-    {heading: "03 | Heading3", logo:"logo", cardImage:"/imgs/intro.jpg", descriptionHeading:"Card Heading 3", description:"Card description 3"},
+    {heading: "01 | Heading1", logo:"/imgs/studio.jpg", cardImage:"/imgs/intro.jpg", descriptionHeading:"Card Heading 1", description:"Card description 1"},
+    {heading: "02 | Heading2", logo:"/imgs/intro.jpg", cardImage:"/imgs/studio.jpg", descriptionHeading:"Card Heading 2", description:"Card description 2"},
+    {heading: "03 | Heading3", logo:"/imgs/studio.jpg", cardImage:"/imgs/intro.jpg", descriptionHeading:"Card Heading 3", description:"Card description 3"},
 ];
 const Home = () => {
     return <>

@@ -5,7 +5,7 @@ const Cards = ({cardsConfig}) => {
         <div className="card-container">
             <div className="card-heading">
                 <div className="heading">{cardsConfig.heading}</div>
-                <div className="logo">{cardsConfig.logo}</div>
+                <div className="logo">{cardsConfig.logo ? <img src={cardsConfig.logo} alt="card-icon"/> : 'card-icon'}</div>
             </div>
             <div className="card-body">
                 <div className="card-image">
