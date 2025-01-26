@@ -1,0 +1,59 @@
+.home-container {
+    width: 70%;
+    margin-top: 8rem;
+}
+
+.work {
+    padding: 20px;
+    margin: 48px 0;
+}
+.work .work-heading {
+    font-size: 25px;
+    color: rgb(151, 151, 151);
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 48px;
+}
+
+.intro-img {
+    position: relative;
+    background-image: url("../../../public/imgs/intro.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 400px;
+    margin: 40px 0;
+    filter: grayscale(80%);
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    overflow: hidden;
+    animation: slideBackground 30s infinite alternate;
+}
+  
+.intro-img-text {
+    color: white;
+    font-size: 1.5rem;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    box-shadow: rgb(36, 36, 36) 0px 0px 40px 0px;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 20px;
+}
+
+.intro-img-text code {
+    display: block; 
+    color: #f8f8f2;
+    white-space: pre-wrap; 
+    word-wrap: break-word;
+}
+
+@keyframes slideBackground {
+    0% {
+      background-position: center;
+    }
+    100% {
+      background-position: top right;
+    }
+}

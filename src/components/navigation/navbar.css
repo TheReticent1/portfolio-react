@@ -3,6 +3,9 @@
     justify-content: center;
     color: rgb(127, 129, 136);
     margin-top: 15px;
+    position: fixed;
+    width: 100%;
+    z-index: 99;
   }
   .navbar{
     display: flex;
@@ -62,6 +65,9 @@
   .nav-items ul li:hover {
     cursor: pointer;
     color: #fdfdfd;
+  }
+  .active {
+    color: #fdfdfd !important;
   }
   .clock {
     width: 20%;

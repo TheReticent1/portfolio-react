@@ -1,9 +1,11 @@
 import { useState, useEffect } from "react";
 import "./navbar.css";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 const NavBar = () => {
     const [time, setTime] = useState(new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit', hour12: true })); //8:31PM
+    const location = useLocation();
+    const isActive = (path) => location.pathname === path ? 'active' : '';
 
     useEffect(() => {
         const interval = setInterval(() => {
@@ -21,13 +23,10 @@ const NavBar = () => {
                 <ul>
                     <li>CP</li>
                     <li>
-                        <Link to={"/"}>Home</Link>
+                        <Link to={"/"} className={isActive("/")}>Home</Link>
                     </li>
                     <li>
-                        <Link to={"/about"}>About Me</Link>
-                    </li>
-                    <li>
-                        <Link to={"/"}>Portfolio</Link>
+                        <Link to={"/about"} className={isActive("/about")}>About Me</Link>
                     </li>
                     <li>
                         <Link to={"/"}>Contact</Link>

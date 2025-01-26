@@ -6,3 +6,42 @@ body {
   background-color: #101010;
   color: rgb(127, 129, 136);
 }
+
+::-webkit-scrollbar {
+  width: 12px;
+  height: 12px;
+}
+::-webkit-scrollbar-track {
+  background: #333;
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb {
+  background: #555;
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #888;
+  cursor: pointer;
+}
+
+.container{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.heading{
+  font-size: 36px;
+  text-align: center;
+  margin: 10px 0;
+  font-weight: 500px;
+}
+.sub-heading {
+  font-size: 18px;
+  text-align: center;
+}
+
+.gradient {
+  background: linear-gradient(0deg, rgb(89, 89, 89) 0%, rgb(255, 255, 255) 100%);
+  -webkit-background-clip: text;
+  color: transparent;
+}
