@@ -1,0 +1,62 @@
+.work {
+    padding: 20px;
+    margin: 48px 0;
+}
+.work .work-heading {
+    font-size: 25px;
+    color: rgb(151, 151, 151);
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 48px;
+}
+.timeline {
+    display: flex;
+    justify-content: center;
+}
+.timeline ul {
+    width: 10px;
+    list-style: none;
+    background: rgb(48, 50, 54);
+    border-radius: 5px;
+    margin: 0;
+    padding: 0;
+}
+.timeline-card {
+    width: 300px;
+    margin: 30px;
+    border: 1px solid rgb(39,39,39);
+    border-radius: 10px;
+    padding: 20px;
+    background-color: rgb(30, 29, 28);
+    box-shadow: rgb(36, 36, 36) 0px 0px 0px 0px;
+    transition: all ease-in-out 0.3s;
+}
+.timeline-card:hover {
+    box-shadow: rgb(36, 36, 36) 0px 0px 40px 0px;
+    transform: scale(1.03);
+    cursor: pointer;
+}
+.timeline-card p {
+    margin: 0;
+    font-size: 16px;
+}
+.timeline-card h3 {
+    margin: 8px 0;
+    color: #fdfdfd;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.timeline ul li:nth-child(even) .timeline-card {
+    margin-left: -360px;
+}
+
+.timeline ul li::before {
+    position: absolute;
+    content: '';
+    width: 15px;
+    height: 15px;
+    border-radius: 10px;
+    margin-left: -2.5px;
+    background: #fdfdfd;
+}
