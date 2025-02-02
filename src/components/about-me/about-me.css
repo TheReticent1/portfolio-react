@@ -55,6 +55,6 @@
     font-size: 16px;
     padding: 10px 0;
     font-weight: 500;
-    color: #fdfdfd;
+    color: var(--card-text-color);
     text-transform: uppercase;
 }

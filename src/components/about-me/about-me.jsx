@@ -1,3 +1,5 @@
+import { useState } from "react";
+import Popup from "../../shared/components/popup/popup";
 import "./about-me.css";
 
 const timelineData = [
@@ -44,6 +46,13 @@ const timelineData = [
 ];
 
 const AboutMe = () => {
+    const [card, setCard] = useState();
+    const [visible, setVisible] = useState(false);
+    const handleClick = (val, card) => { 
+        document.body.style.overflow = val ? 'hidden' : 'auto';
+        setVisible(val);
+        setCard(card);
+    }
     return<>
         <div className="container">
             <div className="content">
@@ -59,7 +68,7 @@ const AboutMe = () => {
                                 timelineData.map((item, index) => {
                                     return (
                                         <li key={item.year}>
-                                            <div className="timeline-card">
+                                            <div className="timeline-card" onClick={() => handleClick(true, item)} title="more details...">
                                                 <div className="tl-year">{item.year}</div>
                                                 <div className="tl-heading">{item.heading}</div>
                                                 <div className="tl-discription">
@@ -75,6 +84,7 @@ const AboutMe = () => {
                 </div>
             </div>
         </div>
+        <Popup visible={visible} popupData={card} onDataChange={handleClick}/>
     </>
 }
 
