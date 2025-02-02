@@ -1,3 +1,5 @@
+import { useState } from 'react';
+import Popup from '../../shared/components/popup/popup';
 import './about-me.css';
 const timelineData = [
     { year:"2025 - Persent", heading:"Job Hunting", description:"Looking for React js job at entry level in Pune."},
@@ -8,6 +10,10 @@ const timelineData = [
     { year:"2013-2014", heading:"SSC", description:"Passout from school"},
 ]
 const AboutMe = () => {
+    const [visible, setVisible] = useState(false);
+    const handleClick = (val) => {
+        setVisible(val);
+    }
     return<>
         <div className="container">
             <div className="content">
@@ -22,7 +28,7 @@ const AboutMe = () => {
                             {
                                 timelineData.map((card, index) => {
                                     return <li key={index}>
-                                            <div className="timeline-card">
+                                            <div className="timeline-card" onClick={() => handleClick(true)}>
                                                 <p>{card.year}</p>
                                                 <h3>{card.heading}</h3>
                                                 <p>{card.description}</p>
@@ -35,6 +41,7 @@ const AboutMe = () => {
                 </div>
             </div>
         </div>
+        <Popup visible={visible} onHandleClick={handleClick}/>
     </>
 }
 
