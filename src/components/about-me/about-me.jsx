@@ -6,7 +6,29 @@ const timelineData = [
     {
         year: "2024 - Present",
         heading: "Senior Software Consultant",
-        discription: "Leading complex software projects, providing high-level consulting, and optimizing system architecture for clients across various industries. Specializing in cloud solutions, performance improvements, and scalable software design."
+        discription: "Leading complex software projects, providing high-level consulting, and optimizing system architecture for clients across various industries. Specializing in cloud solutions, performance improvements, and scalable software design.",
+        skills: [
+            {skillName:"HTML",rating:8,class:'html'},
+            {skillName:"CSS",rating:8,class:'css'},
+            {skillName:"Javascript",rating:8,class:'javascript'},
+            {skillName:"Typescript",rating:8,class:'typescript'},
+            {skillName:"Node Js",rating:8,class:'nodejs'},
+            {skillName:"Express Js",rating:8,class:'expressjs'},
+            {skillName:"Angular 18",rating:8,class:'angular'},
+            {skillName:"NgRx",rating:8,class:'ngrx'},
+            {skillName:"RxJs",rating:8,class:'rxjs'},
+            {skillName:"React",rating:8,class:'react'},
+            {skillName:"MongoDb",rating:8,class:'mongodb'},
+            {skillName:"MySql",rating:8,class:'mysql'},
+            {skillName:"PostgreSql",rating:8,class:'postgresql'},
+            {skillName:"Mongoose",rating:8,class:'mongoose'},
+            {skillName:"TypeORM",rating:8,class:'typeorm'},
+            {skillName:"Github",rating:8,class:'github'},
+            {skillName:"Azure",rating:8,class:'azure'},
+            {skillName:"CI/CD",rating:8,class:'cicd'},
+            {skillName:"Docker",rating:8,class:'docker'},
+            {skillName:"Kubernetes",rating:8,class:'kubernetes'},
+        ]
     },
     {
         year: "2023 - 2024",

@@ -14,7 +14,14 @@ const Popup = ({visible, popupData, onDataChange}) => {
                         </div>
                     </div>
                     <div className="popup-body">
-                        <p>{popupData.discription}</p>
+                        <div className="popup-skills">
+                            {popupData.skills ? <h3>Skills</h3>:null}
+                            {popupData.skills ? 
+                                popupData.skills.map((item, index) => {
+                                    return <button key={`skills_id_${index}`}className={`button ${item.class}`}>{item.skillName}</button>
+                                })
+                            : null}
+                        </div>
                     </div>
                     
                 </div>
