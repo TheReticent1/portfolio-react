@@ -49,21 +49,9 @@
 
 .popup-body .popup-skills .h3 {
     color: #fdfdfd;
-    font-size: 16px;
+    font-size: 14px;
 }
 
-.popup-body .popup-skills button {
-    border: none;
-    font-size: 16px;
-    color: rgb(188 190 198);
-    padding: 10px 20px;
-    margin-right: 10px;
-    background: rgb(32,32,32);
-    border-radius: 25px;
-    font-weight: 500;
-    border:1px solid rgb(39,39,39);
-    box-shadow: rgb(36, 36, 36) 0px 0px 40px 0px;
-}
 @keyframes fadeIn {
     0% {
         opacity: 0;

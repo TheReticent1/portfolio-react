@@ -1,4 +1,5 @@
-import './popup.css'
+import './popup.css';
+import '../../../../src/button.css';
 const Popup = ({visible, onHandleClick, popupData}) => {
     //early check 
     if(!visible) return null;
@@ -12,15 +13,17 @@ const Popup = ({visible, onHandleClick, popupData}) => {
                     </div>
                 </div>
                 <div className="popup-body">
-                    <div>
-                        <p>{popupData.popupDescription}</p>
-                    </div>
                     <div className='popup-skills'>
-                        {popupData.skills.length ? <h3 className='h3'>What I know.</h3>:<span></span>}
+                        {popupData.projects ? <h3 className='h3'>Projects</h3>:null}
                         {
-                            popupData.skills.length ? (popupData.skills.map((skill, index) => {
-                                return <button key={`skill_id_${index}`}>{skill.skillName}</button>
-                            })): <span></span>
+                            popupData.projects ? (popupData.projects.map((project, index) => {
+                                return (
+                                    <div>
+                                    <div>{project.name} | {project.projectDate}</div>
+                                    <div>{project.description}</div>
+                                    </div>
+                                )
+                            })): null
                         }
                     </div>
                 </div>

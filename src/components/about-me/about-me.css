@@ -14,7 +14,7 @@
     justify-content: center;
 }
 .timeline ul {
-    width: 10px;
+    width: 6px;
     list-style: none;
     background: rgb(48, 50, 54);
     border-radius: 5px;
@@ -22,7 +22,7 @@
     padding: 0;
 }
 .timeline-card {
-    width: 300px;
+    width: 500px;
     margin: 30px;
     border: 1px solid rgb(39,39,39);
     border-radius: 10px;
@@ -48,15 +48,48 @@
 }
 
 .timeline ul li:nth-child(even) .timeline-card {
-    margin-left: -360px;
+    margin-left: -565px;
 }
 
 .timeline ul li::before {
     position: absolute;
     content: '';
-    width: 15px;
-    height: 15px;
+    width: 10px;
+    height: 10px;
     border-radius: 10px;
     margin-left: -2.5px;
+    background: #fdfdfd;
+}
+
+.tc-heading {
+    color: #fdfdfd;
+    font-size: 16px;
+    text-transform: uppercase;
+    padding-bottom: 8px;
+    border-bottom: 2px solid rgb(39, 39, 39);
+    margin-bottom: 8px;
+}
+.tc-heading span {
+    font-size: 14px;
+    color: rgb(127, 129, 136);
+}
+.skills {
+    margin-top: 8px;
+}
+
+.tc-discription {
+    margin-left: 10px;
+}
+.points {
+    padding: 5px 0 5px 10px;
+}
+.points::before {
+    position: absolute;
+    content: '';
+    width: 5px;
+    height: 5px;
+    border-radius: 5px;
+    margin-left: -15px;
+    margin-top: 7px;
     background: #fdfdfd;
 }
