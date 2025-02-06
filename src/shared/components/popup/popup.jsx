@@ -1,4 +1,5 @@
 import "./popup.css";
+import "../../../skills-btn.css";
 const Popup = ({visible, popupData, onDataChange}) => {
     if(!visible) return null; //early check
     return <>

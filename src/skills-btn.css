@@ -1,0 +1,134 @@
+.button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    letter-spacing: 1.3px;
+    color: var(--card-text-color);
+    color: #fff;
+    border: none;
+    border-radius: 25px !important;
+    transition: all 0.3s ease-in-out 0s;
+    cursor: pointer;
+    outline: none;
+    position: relative;
+    padding: 5px 10px;
+    font-size: 10px;
+    margin: 5px;
+    background: transparent;
+}
+.button:hover, 
+.button:focus {
+ box-shadow: 0 2px 5px rgba(255, 255, 255, 0.1), 0 -2px 5px rgba(255, 255, 255, 0.1), 2px 0 5px rgba(255, 255, 255, 0.1), -2px 0 5px rgba(255, 255, 255, 0.1);
+}
+/* HTML */
+.html {
+    /* background: linear-gradient(to right, #E34F26, #F7DF1E); */
+    border: 2px solid #E34F26;
+}
+/* CSS */
+.css {
+    /* background: linear-gradient(to right, #1572B6, #00A9E0); CSS Blue to Light Blue */
+    border: 2px solid #1572B6;
+}
+/* JavaScript */
+.javascript {
+    /* background: linear-gradient(to right, #F7DF1E, #F1C40F); JavaScript Yellow to Gold */
+    border: 2px solid #F1C40F;
+}
+/* TypeScript */
+.typescript {
+    /* background: linear-gradient(to right, #3178C6, #61DAFB); TypeScript Blue to React Blue */
+    border: 2px solid #3178C6;
+}
+/* Node.js */
+.nodejs {
+    /* background: linear-gradient(to right, #68A063, #2E8B57); Node.js Green to Forest Green */
+    border: 2px solid #2E8B57;
+}
+/* Express.js */
+.expressjs {
+    /* background: linear-gradient(to right, #000000, #333333); Express Black to Dark Grey */
+    border: 2px solid #000000;
+}
+/* Angular 18 */
+.angular {
+    /* background: linear-gradient(to right, #DD0031, #E34F26); Angular Red to HTML Red */
+    border: 2px solid #DD0031;
+}
+/* NgRx */
+.ngrx {
+    /* background: linear-gradient(to right, #4A90E2, #0078D4); NgRx Blue to Azure Blue */
+    border: 2px solid #0078D4;
+}
+/* RxJS */
+.rxjs {
+    /* background: linear-gradient(to right, #00796B, #43A047); RxJS Teal to Green */
+    border: 2px solid #00796B;
+}
+/* React */
+.react {
+    /* background: linear-gradient(to right, #61DAFB, #3B5998); React Blue to Facebook Blue */
+    border: 2px solid #61DAFB;
+}
+/* MongoDB */
+.mongodb {
+    /* background: linear-gradient(to right, #47A248, #006A3D); MongoDB Green to Dark Green */
+    border: 2px solid #006A3D;
+}
+/* MySQL */
+.mysql {
+    /* background: linear-gradient(to right, #00618A, #00A9E0); MySQL Blue to Light Blue */
+    border: 2px solid #00618A;
+}
+/* PostgreSQL */
+.postgresql {
+    /* background: linear-gradient(to right, #336791, #294F75); PostgreSQL Blue to Dark Blue */
+    border: 2px solid #336791;
+}
+/* Mongoose */
+.mongoose {
+    /* background: linear-gradient(to right, #800000, #B22222); Mongoose Dark Red to Firebrick */
+    border: 2px solid #800000;
+}
+/* TypeORM */
+.typeorm {
+    /* background: linear-gradient(to right, #2F6E78, #1F4E59); TypeORM Greenish Blue to Dark Greenish Blue */
+    border: 2px solid #2F6E78;
+}
+/* GitHub */
+.github {
+    /* background: linear-gradient(to right, #181717, #333333); GitHub Dark to Darker */
+    border: 2px solid #181717;
+}
+/* Azure */
+.azure {
+    /* background: linear-gradient(to right, #0078D4, #1E90FF); Azure Blue to Dodger Blue */
+    border: 2px solid #0078D4;
+}
+/* CI/CD */
+.cicd {
+    /* background: linear-gradient(to right, #FF6900, #FF4500); CI/CD Orange to Orange Red */
+    border: 2px solid #FF6900;
+}
+/* Docker */
+.docker {
+    /* background: linear-gradient(to right, #2496ED, #1E88E5); Docker Blue to Blue */
+    border: 2px solid #2496ED;
+}
+/* Kubernetes */
+.kubernetes {
+    /* background: linear-gradient(to right, #326CE5, #2A73D8); Kubernetes Blue to Azure Blue */
+    border: 2px solid #326CE5;
+}
+.npm {
+    border: 2px solid #CB3837;
+}
+.ngnix {
+    border: 2px solid #009639;
+}
+.netlify {
+    border: 2px solid #00C7B7;
+}
+.php {
+    border: 2px solid #8993BE;
+}

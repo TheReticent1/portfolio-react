@@ -21,7 +21,7 @@
     width: 3px;
 }
 .timeline ul li .timeline-card{
-    width: 400px;
+    width: 500px;
     padding: 20px;
     margin: 20px 0;
     border-radius: 10px;
@@ -39,7 +39,7 @@
     margin-left: 30px;
 }
 .timeline ul li:nth-child(even) .timeline-card {
-    margin-left: -470px;
+    margin-left: -570px;
 }
 .timeline ul li::before {
     content: '';
@@ -57,4 +57,37 @@
     font-weight: 500;
     color: var(--card-text-color);
     text-transform: uppercase;
+}
+.tc-header {
+    font-size: 16px;
+    text-transform: uppercase;
+    color: var(--card-text-color);
+    padding-bottom: 10px;
+    border-bottom: 2px solid var(--card-border-color);
+}
+.tc-header span {
+    font-size: 14px;
+    color: var(--text-color);
+    text-transform: none;
+}
+.tl-discription {
+    margin-top: 8px;
+}
+.tl-discription .points {
+    font-size: 16px;
+    padding: 5px 0 5px 10px;
+    position: relative;
+}
+.tl-discription .points .dot {
+    position: absolute;
+    display: block;
+    width: 5px;
+    height: 5px;
+    background: var(--card-text-color);
+    border-radius: 5px;
+    top: 10px;
+    left: -5px;
+}
+.tl-skills{
+    margin-top: 8px;
 }
